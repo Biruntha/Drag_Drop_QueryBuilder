@@ -1,0 +1,80 @@
+body {
+	font-family: arial;
+}
+
+/* drag container*/
+#drag {
+	padding-left:12px;
+	padding-top:12px;
+	border: 5px ridge gray;
+	width: 900px;
+}
+		/* left container */
+		#drag #left {
+			width: 110px;
+		}
+		/* right container */
+		#drag #right {
+		  	display: table;
+		    table-layout: auto;
+		}
+
+
+/* DIV object */
+.drag {
+	width: auto;
+	height: 28px;
+	line-height: 25px;
+	background-color: white;
+	font-size: 10pt; /* needed for cloned object */
+	/* round corners */
+	border-radius: 4px; /* Opera, Chrome */
+	-moz-border-radius: 4px; /* FF */
+}
+
+/* tables */
+div#drag table {
+	background-color: #eee;
+	border-collapse: collapse;
+}
+	/* table cells */
+	div#drag td {
+		border: 2px outset white;
+		font-size: 10pt;
+	}
+	table#table1 td {
+		height: 20px;
+		border:3px groove #999;
+	}
+	table#table2 td {
+		height: 122px;
+	}
+
+
+/* green, orange and blue DIV elements */
+.green {
+	border: 0px solid;
+}
+.orange {
+	border: 1px solid #BF6A30;
+}
+.blue {
+	border: 1px solid SteelBlue;
+}
+
+/* message below tables */
+#message {
+	color: #6A93D4;
+	height: 100px;
+	padding-top: 20px;
+}
+
+/* single content cells (with clone objects on the left) */
+.single {
+	background-color: #e0e0e0;
+}
+.trash {
+	color: white;
+	background-color: SteelBlue;
+	height: 26px;
+}
